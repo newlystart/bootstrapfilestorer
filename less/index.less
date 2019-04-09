@@ -20,14 +20,14 @@
 
         h2 {
           font-size: 18px;
-          font-family: SourceHanSansSC-Medium;
+          font-family: 'SourceHanSansSC-Medium';
           margin-bottom: 14px;
           transition: all 0.5s;
           -moz-transition: all 0.5s;
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
           position: absolute;
-          top: 20px;
+          top: 39px;
 
           i {
             width: 30px;
@@ -41,17 +41,21 @@
         div {
           margin-top: 14px;
           font-size: 16px;
-          font-family: SourceHanSansSC-Regular;
+          font-family: 'SourceHanSansSC-Regular';
           position: absolute;
           bottom: -88px;
           transition: all 0.5s;
           -moz-transition: all 0.5s;
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
+
+          P {
+            margin-bottom: 5px;
+          }
         }
 
         &:hover h2 {
-          top: 0px;
+          top: 19px;
         }
 
         &:hover div {
@@ -94,6 +98,10 @@
     span {
       font-size: 16px;
       font-family: 'SourceHanSansSC-Regular';
+
+      &:hover {
+        color: #00A0E9;
+      }
     }
   }
 
@@ -128,12 +136,19 @@
         position: relative;
         background: #ffffff;
 
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 3px 8px 1px rgba(4, 0, 0, 0.2);
+          z-index: 2;
+        }
+
         h5 {
           font-size: 18px;
           color: #333333;
           text-align: center;
           font-family: 'SourceHanSansSC-Regular';
           margin-top: 20px;
+          margin-bottom: 19px;
         }
 
         .ul-li-text {
@@ -154,34 +169,48 @@
 
           dd {
             font-size: 12px;
-            font-family: SourceHanSansSC-Regular;
+            font-family: 'SourceHanSansSC-Regular';
             color: #666666;
             margin-bottom: 18px;
 
             span {
-              width: 135px;
+              width: 131px;
               display: inline-block;
             }
 
             img {
               margin-right: 5px;
             }
+
+            em {
+              font-family: SourceHanSansSC-Regular;
+              font-weight: bold;
+            }
           }
         }
 
+        .list-retail {
+          margin-top: 14px;
+          font-size: 12px;
+          color: #666666;
+          text-align: center;
+          font-family: 'SourceHanSansSC-Regular';
+          text-decoration: line-through
+        }
+
         .product-ul-li-dt {
-          margin-bottom: 47px;
+          margin-bottom: 77px;
         }
 
         .list-price {
           font-size: 14px;
           color: #00A0E9;
-          font-family: SourceHanSansSC-Regular;
+          font-family: 'SourceHanSansSC-Regular';
           text-align: center;
 
           span {
             font-size: 20px;
-            font-family: SourceHanSansSC-Bold;
+            font-family: 'SourceHanSansSC-Bold';
             font-weight: bold;
           }
         }
@@ -236,7 +265,8 @@
     }
 
     ul {
-        margin-bottom: 0px;
+      margin-bottom: 0px;
+
       li {
         width: 20%;
         height: 400px;
@@ -341,6 +371,7 @@
 
   .tool {
     background: #fff;
+
     ul {
       li {
         text-align: center;
@@ -365,44 +396,57 @@
     }
   }
 
-    .Immobility-move {
-      &:hover {
-        -webkit-animation: keyframes 2s linear infinite;
-        -moz-animation: keyframes 2s linear infinite;
-        animation: zindex 2s linear infinite;
-      }
+  .Immobility-move {
+    &:hover {
+      -webkit-animation: keyframes 2s linear infinite;
+      -moz-animation: keyframes 2s linear infinite;
+      animation: zindex 2s linear infinite;
     }
-    .keyframes (@prefix,@name,@content) when (@prefix=def) {
-      @keyframes @name {
-        @content();
-      }
+  }
+
+  .keyframes (@prefix, @name, @content) when (@prefix=def) {
+    @keyframes @name {
+      @content();
     }
-    .keyframes (@prefix,@name,@content) when (@prefix=moz) {
-      @-moz-keyframes @name {
-        @content();
-      }
+  }
+
+  .keyframes (@prefix, @name, @content) when (@prefix=moz) {
+    @-moz-keyframes @name {
+      @content();
     }
-    .keyframes (@prefix,@name,@content) when (@prefix=o) {
-      @-o-keyframes @name {
-        @content();
-      }
+  }
+
+  .keyframes (@prefix, @name, @content) when (@prefix=o) {
+    @-o-keyframes @name {
+      @content();
     }
-    .keyframes (@prefix,@name,@content) when (@prefix=webkit) {
-      @-webkit-keyframes  @name{
-        @content();
-      }
+  }
+
+  .keyframes (@prefix, @name, @content) when (@prefix=webkit) {
+    @-webkit-keyframes @name {
+      @content();
     }
-    .keyframes (@prefix,@name,@content) when (@prefix=all) {
-      .keyframes(moz,@name,@content);
-      .keyframes(o,@name,@content);
-      .keyframes(webkit,@name,@content);
-      .keyframes(def,@name,@content);
+  }
+
+  .keyframes (@prefix, @name, @content) when (@prefix=all) {
+    .keyframes(moz, @name, @content);
+    .keyframes(o, @name, @content);
+    .keyframes(webkit, @name, @content);
+    .keyframes(def, @name, @content);
+  }
+
+  .keyframes(all, zindex, {
+    from {
+      transform: rotate(0deg)
     }
-    .keyframes(all,zindex,{
-      from{transform: rotate(0deg)}
-      to{transform: rotate(360deg)}
-    });
-    
+
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+  );
+
   .partner {
     background: #ffffff;
     color: #333333;
@@ -429,6 +473,7 @@
 
     p {
       font-size: 24px;
+      margin-top: 19px;
     }
 
     span {
@@ -466,7 +511,7 @@
     // display: flex;
     margin-bottom: 69px;
     background: #fff;
-  
+
     span {
       // margin-left: 83px;
       font-size: 14px;
@@ -476,6 +521,7 @@
       align-items: center;
       height: 50px;
       margin-bottom: 20px;
+
       img {
         margin-right: 8px;
       }
@@ -512,10 +558,23 @@
         }
       }
 
+      .home-nav {
+        ul {
+          li {
+            height: 215px;
+
+            div {
+              bottom: 40px;
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+
       .home-product {
         ul {
           li {
-            height: 590px;
+            height: 605px;
 
             dl {
               height: 225px;
@@ -537,12 +596,14 @@
           }
         }
       }
+
       //  产品
-      .home-product{
-        h3{
+      .home-product {
+        h3 {
           padding: 0 15px;
         }
       }
+
       /* 解决方案 */
       .programme {
         ul {
@@ -551,11 +612,18 @@
           }
         }
       }
-      .distribution{
+
+      .distribution {
         line-height: 30px;
         font-size: 16px;
+
         p {
           font-size: 14px;
+        }
+      }
+      .partner{
+        p{
+          font-size: 18px;
         }
       }
     }

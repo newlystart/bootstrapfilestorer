@@ -119,7 +119,8 @@ html {
 }
 .header .navbar-default .navbar-header > a .haeder-logo {
   width: 30%;
-  margin-right: 5px;
+  margin-right: 10px;
+  transform: scale(1.2);
 }
 .header .navbar-default .navbar-header > a .logo-text {
   width: 70%;

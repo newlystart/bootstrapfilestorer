@@ -19,14 +19,14 @@
 }
 .home .home-nav ul li h2 {
   font-size: 18px;
-  font-family: SourceHanSansSC-Medium;
+  font-family: 'SourceHanSansSC-Medium';
   margin-bottom: 14px;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   position: absolute;
-  top: 20px;
+  top: 39px;
 }
 .home .home-nav ul li h2 i {
   width: 30px;
@@ -38,7 +38,7 @@
 .home .home-nav ul li div {
   margin-top: 14px;
   font-size: 16px;
-  font-family: SourceHanSansSC-Regular;
+  font-family: 'SourceHanSansSC-Regular';
   position: absolute;
   bottom: -88px;
   transition: all 0.5s;
@@ -46,8 +46,11 @@
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
+.home .home-nav ul li div P {
+  margin-bottom: 5px;
+}
 .home .home-nav ul li:hover h2 {
-  top: 0px;
+  top: 19px;
 }
 .home .home-nav ul li:hover div {
   bottom: 40px;
@@ -81,6 +84,9 @@
   font-size: 16px;
   font-family: 'SourceHanSansSC-Regular';
 }
+.home .home-logo span:hover {
+  color: #00A0E9;
+}
 .home .home-product {
   background: #f5f5f8;
   padding: 40px 0px;
@@ -109,12 +115,18 @@
   position: relative;
   background: #ffffff;
 }
+.home .home-product ul li:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 8px 1px rgba(4, 0, 0, 0.2);
+  z-index: 2;
+}
 .home .home-product ul li h5 {
   font-size: 18px;
   color: #333333;
   text-align: center;
   font-family: 'SourceHanSansSC-Regular';
   margin-top: 20px;
+  margin-bottom: 19px;
 }
 .home .home-product ul li .ul-li-text {
   height: 50px;
@@ -133,29 +145,41 @@
 }
 .home .home-product ul li dl dd {
   font-size: 12px;
-  font-family: SourceHanSansSC-Regular;
+  font-family: 'SourceHanSansSC-Regular';
   color: #666666;
   margin-bottom: 18px;
 }
 .home .home-product ul li dl dd span {
-  width: 135px;
+  width: 131px;
   display: inline-block;
 }
 .home .home-product ul li dl dd img {
   margin-right: 5px;
 }
+.home .home-product ul li dl dd em {
+  font-family: SourceHanSansSC-Regular;
+  font-weight: bold;
+}
+.home .home-product ul li .list-retail {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  font-family: 'SourceHanSansSC-Regular';
+  text-decoration: line-through;
+}
 .home .home-product ul li .product-ul-li-dt {
-  margin-bottom: 47px;
+  margin-bottom: 77px;
 }
 .home .home-product ul li .list-price {
   font-size: 14px;
   color: #00A0E9;
-  font-family: SourceHanSansSC-Regular;
+  font-family: 'SourceHanSansSC-Regular';
   text-align: center;
 }
 .home .home-product ul li .list-price span {
   font-size: 20px;
-  font-family: SourceHanSansSC-Bold;
+  font-family: 'SourceHanSansSC-Bold';
   font-weight: bold;
 }
 .home .home-product ul li button {
@@ -360,6 +384,7 @@
 }
 .home .partner p {
   font-size: 24px;
+  margin-top: 19px;
 }
 .home .partner span {
   font-size: 16px;
@@ -419,8 +444,15 @@
     font-size: 14px;
     font-family: 'SourceHanSansSC-Regular';
   }
+  body .home .home-nav ul li {
+    height: 215px;
+  }
+  body .home .home-nav ul li div {
+    bottom: 40px;
+    padding-right: 15px;
+  }
   body .home .home-product ul li {
-    height: 590px;
+    height: 605px;
   }
   body .home .home-product ul li dl {
     height: 225px;
@@ -447,5 +479,8 @@
   }
   body .home .distribution p {
     font-size: 14px;
+  }
+  body .home .partner p {
+    font-size: 18px;
   }
 }
