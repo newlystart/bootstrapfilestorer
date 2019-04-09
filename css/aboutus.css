@@ -1,0 +1,279 @@
+/* 了解文储 */
+.brief {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-top: 59px;
+  margin-bottom: 30px;
+}
+.brief .brief-titlet h2 {
+  font-size: 85px;
+  color: #666666;
+  font-family: DINCond-Black;
+  opacity: 0.14;
+}
+.brief .brief-titlet span {
+  font-size: 30px;
+  color: #333333;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -65px;
+}
+.brief dl dd {
+  padding: 0;
+  height: 166px;
+  border-right: 1px solid #d3d0d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 55px;
+}
+.brief dl dd:last-child {
+  border-right: none;
+}
+.brief dl dd span {
+  font-size: 16px;
+  color: #171719;
+  font-family: SourceHanSansSC-Regular;
+}
+.brief .brief-content {
+  font-size: 16px;
+  color: #666666;
+  font-family: SourceHanSansSC-Regular;
+  text-align: left;
+  line-height: 30px;
+  text-indent: 35px;
+}
+.brief dl dd h3,
+.brief dl dd .brief-titlet-number {
+  font-size: 48px;
+  font-family: SourceHanSansSC-Medium;
+  display: inline-block;
+}
+/* 认识文储 */
+.know {
+  background: #f5f5f8;
+}
+.know .know-titlet {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+.know .know-titlet h2 {
+  font-size: 85px;
+  color: #666666;
+  font-family: DINCond-Black;
+  opacity: 0.14;
+}
+.know .know-titlet span {
+  font-size: 30px;
+  color: #333333;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -65px;
+}
+.know .know-content {
+  font-size: 16px;
+  color: #666666;
+  font-family: SourceHanSansSC-Regular;
+  text-align: left;
+  line-height: 30px;
+  text-indent: 35px;
+}
+.know .know-list {
+  height: 859px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.know .know-list .know-list-box {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+.know .know-list .know-list-box li {
+  height: 230px;
+  position: relative;
+}
+.know .know-list .li-hide {
+  width: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  line-height: 230px;
+  position: absolute;
+  top: 0;
+  z-index: 22;
+}
+.know .li-oshow {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 0px;
+  line-height: 23px;
+  background: url('../image/know-bj.png') no-repeat center;
+  background-size: 100% 100%;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  overflow: hidden;
+}
+.know .oshow-pic {
+  width: 100%;
+  height: 240px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  z-index: 20;
+}
+.know .oshow-pic img {
+  width: 100%;
+}
+.know .oshow-pic .hide-pic {
+  position: relative;
+  left: -1px;
+  width: 100%;
+}
+.oshow-conter {
+  color: #ffffff;
+  padding: 0 17px;
+}
+.oshow-conter h4 {
+  font-size: 24px;
+  text-align: center;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 23px;
+}
+.oshow-conter span {
+  font-size: 14px;
+  font-family: SourceHanSansSC-Regular;
+  text-indent: 31px;
+  display: inline-block;
+}
+.img-show {
+  display: none;
+}
+/* 事件 */
+.event {
+  background: #ffffff;
+  padding-top: 104px;
+  position: relative;
+}
+.event .event-titlet {
+  position: relative;
+}
+.event .event-titlet h2 {
+  font-size: 85px;
+  color: #333333;
+  text-align: center;
+  font-family: DINCond-Black;
+  opacity: 0.14;
+}
+.event .event-titlet span {
+  font-size: 30px;
+  color: #333333;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -80px;
+}
+.event .event-silder {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.event .event-silder .silder-axis {
+  position: absolute;
+  background: #fff;
+}
+.event .event-silder .event-box {
+  margin-left: 8px;
+  border-left: 1px solid #00a0e9;
+  margin-bottom: 70px;
+  width: 100%;
+}
+.event .event-silder .event-box .event-box-list p {
+  font-size: 16px;
+  font-family: SourceHanSansSC-Regular;
+  margin-bottom: 12px;
+}
+.event .event-silder .ol-li-active {
+  color: #ffffff;
+  background: #00a0e9;
+}
+.event .event-silder .event-box-list {
+  padding-left: 25px;
+  position: relative;
+}
+.event .event-silder .event-box-list h5 {
+  font-size: 24px;
+  color: #666666;
+  font-family: DINCond-Black;
+  margin-bottom: 21px;
+}
+.event .event-silder .event-box-list h5 i {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #00a0e9;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  left: -8px;
+  top: 10px;
+}
+.event .event-silder .event-box-list p i {
+  width: 8px;
+  height: 8px;
+  background: #00a0e9;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: inline-block;
+}
+.event .event-silder .event-box-list p span {
+  width: 35px;
+  margin-right: 20px;
+}
+.event .event-silder .event-box-list .list-top h5 {
+  margin: 23px auto;
+}
+.event ol {
+  top: 16.5%;
+  right: 19.5%;
+  cursor: pointer;
+}
+.event ol li {
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  line-height: 30px;
+  font-family: DINCond-Black;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
