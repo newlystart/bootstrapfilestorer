@@ -1,5 +1,5 @@
 .home {
-
+  // 轮播图下导航栏
   .home-nav {
     background: rgba(247, 248, 251, 1);
 
@@ -64,7 +64,7 @@
       }
     }
   }
-
+  // logo
   .home-logo {
     text-align: center;
     padding-bottom: 60px;
@@ -104,7 +104,7 @@
       }
     }
   }
-
+  // 产品
   .home-product {
     background: rgba(245, 245, 248, 1);
     padding: 40px 0px;
@@ -368,7 +368,7 @@
 
 
   }
-
+  // 系统
   .tool {
     background: #fff;
 
@@ -392,61 +392,59 @@
           width: 58px;
           height: 54px;
         }
+        .Immobility-move {
+          &:hover {
+            -webkit-animation: keyframes 2s linear infinite;
+            -moz-animation: keyframes 2s linear infinite;
+            animation: zindex 2s linear infinite;
+          }
+        }
+      
+        .keyframes (@prefix, @name, @content) when (@prefix=def) {
+          @keyframes @name {
+            @content();
+          }
+        }
+      
+        .keyframes (@prefix, @name, @content) when (@prefix=moz) {
+          @-moz-keyframes @name {
+            @content();
+          }
+        }
+      
+        .keyframes (@prefix, @name, @content) when (@prefix=o) {
+          @-o-keyframes @name {
+            @content();
+          }
+        }
+      
+        .keyframes (@prefix, @name, @content) when (@prefix=webkit) {
+          @-webkit-keyframes @name {
+            @content();
+          }
+        }
+      
+        .keyframes (@prefix, @name, @content) when (@prefix=all) {
+          .keyframes(moz, @name, @content);
+          .keyframes(o, @name, @content);
+          .keyframes(webkit, @name, @content);
+          .keyframes(def, @name, @content);
+        }
+      
+        .keyframes(all, zindex, {
+          from {
+            transform: rotate(0deg)
+          }
+      
+          to {
+            transform: rotate(360deg)
+          }
+        }
+        );
       }
     }
   }
-
-  .Immobility-move {
-    &:hover {
-      -webkit-animation: keyframes 2s linear infinite;
-      -moz-animation: keyframes 2s linear infinite;
-      animation: zindex 2s linear infinite;
-    }
-  }
-
-  .keyframes (@prefix, @name, @content) when (@prefix=def) {
-    @keyframes @name {
-      @content();
-    }
-  }
-
-  .keyframes (@prefix, @name, @content) when (@prefix=moz) {
-    @-moz-keyframes @name {
-      @content();
-    }
-  }
-
-  .keyframes (@prefix, @name, @content) when (@prefix=o) {
-    @-o-keyframes @name {
-      @content();
-    }
-  }
-
-  .keyframes (@prefix, @name, @content) when (@prefix=webkit) {
-    @-webkit-keyframes @name {
-      @content();
-    }
-  }
-
-  .keyframes (@prefix, @name, @content) when (@prefix=all) {
-    .keyframes(moz, @name, @content);
-    .keyframes(o, @name, @content);
-    .keyframes(webkit, @name, @content);
-    .keyframes(def, @name, @content);
-  }
-
-  .keyframes(all, zindex, {
-    from {
-      transform: rotate(0deg)
-    }
-
-    to {
-      transform: rotate(360deg)
-    }
-  }
-
-  );
-
+  // logo
   .partner {
     background: #ffffff;
     color: #333333;
@@ -485,7 +483,6 @@
       }
     }
   }
-
   /* 分布 */
   .distribution {
     line-height: 50px;
@@ -504,16 +501,12 @@
       }
     }
   }
-
+    // logo
   .main-bar {
-    // width: 1200px;
     margin: 39px auto;
-    // display: flex;
     margin-bottom: 69px;
     background: #fff;
-
     span {
-      // margin-left: 83px;
       font-size: 14px;
       color: #666666;
       font-family: SourceHanSansSC-Regular;
@@ -527,7 +520,6 @@
       }
     }
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -621,8 +613,9 @@
           font-size: 14px;
         }
       }
-      .partner{
-        p{
+
+      .partner {
+        p {
           font-size: 18px;
         }
       }

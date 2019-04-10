@@ -1,355 +1,372 @@
-/* 了解文储 */
-.brief {
-    text-align: center;
-    position: relative;
-    margin: auto;
-    margin-top: 59px;
-    margin-bottom: 30px;
-    .brief-titlet {
-        h2 {
-            font-size: 85px;
-            color: #666666;
-            font-family: DINCond-Black;
-            opacity: 0.14;
-        }
+.aboutus {
 
-        span {
-            font-size: 30px;
-            color: #333333;
-            font-family: SourceHanSansSC-Bold;
-            font-weight: bold;
-            position: absolute;
-            top: 25px;
-            left: 50%;
-            margin-left: -65px;
-        }
-    }
+    /* 了解文储 */
+    .brief {
+        text-align: center;
+        position: relative;
+        margin: auto;
+        margin-top: 59px;
+        margin-bottom: 30px;
 
-    dl {
-        dd {
-            padding: 0;
-            height: 166px;
-            border-right: 1px solid #d3d0d0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            line-height: 55px;
-
-            &:last-child {
-                border-right: none;
+        .brief-titlet {
+            h2 {
+                font-size: 85px;
+                color: #666666;
+                font-family: DINCond-Black;
+                opacity: 0.14;
             }
 
             span {
-                font-size: 16px;
-                color: #171719;
-                font-family: SourceHanSansSC-Regular;
+                font-size: 30px;
+                color: #333333;
+                font-family: SourceHanSansSC-Bold;
+                font-weight: bold;
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                margin-left: -65px;
             }
         }
-    }
-    .brief-content {
-        font-size: 16px;
-        color: #666666;
-        font-family: SourceHanSansSC-Regular;
-        text-align: left;
-        line-height: 30px;
-        text-indent: 35px;
-    }
-}
 
-.brief dl dd h3,
-.brief dl dd .brief-titlet-number {
-    font-size: 48px;
-    font-family: SourceHanSansSC-Medium;
-    display: inline-block;
-}
+        dl {
+            dd {
+                padding: 0;
+                height: 166px;
+                border-right: 1px solid #d3d0d0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 55px;
 
-/* 认识文储 */
-.know {
-    background: #f5f5f8;
-    .know-titlet {
-        text-align: center;
-        position: relative;
-        margin: auto;
-        margin-top: 37px;
-        margin-bottom: 24px;
+                &:last-child {
+                    border-right: none;
+                }
 
-        h2 {
-            font-size: 85px;
-            color: #666666;
-            font-family: DINCond-Black;
-            opacity: 0.14;
-        }
-
-        span {
-            font-size: 30px;
-            color: #333333;
-            font-family: SourceHanSansSC-Bold;
-            font-weight: bold;
-            position: absolute;
-            top: 25px;
-            left: 50%;
-            margin-left: -65px;
-        }
-    }
-    .know-content {
-        font-size: 16px;
-        color: #666666;
-        font-family: SourceHanSansSC-Regular;
-        text-align: left;
-        line-height: 30px;
-        text-indent: 35px;
-        margin-bottom: 20px;
-    }
-    .know-list {
-        height: 859px;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-    
-        .know-list-box {
-            width: 100%;
-            position: relative;
-            top: -100px;
-    
-            li {
-                height: 230px;
-                position: relative;
-            }
-        }
-        .li-hide {
-            width: 100%;
-            font-size: 24px;
-            color: #ffffff;
-            text-align: center;
-            font-family: SourceHanSansSC-Bold;
-            font-weight: bold;
-            line-height: 230px;
-            position: absolute;
-            top: 0;
-            z-index: 22;
-        }
-    }
-    .li-oshow {
-        position: absolute;
-        top: 17px;
-        width: 100%;
-        height: 0px;
-        line-height: 23px;
-        background: url('../image/know-bj.png') no-repeat center;
-        background-size: 100% 100%;
-        transition: all 0.4s;
-        -moz-transition: all 0.4s;
-        -webkit-transition: all 0.4s;
-        -o-transition: all 0.4s;
-        overflow: hidden;
-    }
-    
-    .oshow-pic {
-        width: 100%;
-        height: 240px;
-        display: inline-block;
-        position: absolute;
-        top: 0px;
-        transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        z-index: 20;
-        img {
-            width: 100%;
-        }
-        .hide-pic {
-            position: relative;
-            left: -1px;
-            width: 100%;
-        }
-    }
-    // 手机端
-    .know-mobile{
-        position: relative;
-        img{
-            width: 100%;
-            position: relative;
-            z-index: 9;
-        }
-        h3{
-            position: absolute;
-            top: 20%;
-            color: #fff;
-            text-align: center;
-            margin-right: auto;
-            margin-left: auto;
-            left: 0;
-            right: 0;
-            font-size: 18px;
-            z-index: 10;
-        }
-        span{
-            background: url(../image/know-bj.png) no-repeat center;
-            display: block;
-            font-size: 14px;
-            color: #fff;
-            text-indent: 31px;
-            background-size: 100% 100%;
-            padding: 50px 15px;
-            position: relative;
-            top: -25px;
-            line-height: 27px;
-        }
-    }
-}
-
-.oshow-conter {
-    color: #ffffff;
-    padding: 0 17px;
-
-    h4 {
-        font-size: 24px;
-        text-align: center;
-        font-family: SourceHanSansSC-Bold;
-        font-weight: bold;
-        margin-top: 45px;
-        margin-bottom: 23px;
-    }
-
-    span {
-        font-size: 14px;
-        font-family: SourceHanSansSC-Regular;
-        text-indent: 31px;
-        display: inline-block;
-    }
-}
-.img-show {
-    display: none;
-}
-
-
-
-/* 事件 */
-.event {
-    background: #ffffff;
-    padding-top: 104px;
-    position: relative;
-    .event-titlet {
-        position: relative;
-
-        h2 {
-            font-size: 85px;
-            color: #333333;
-            text-align: center;
-            font-family: DINCond-Black;
-            opacity: 0.14;
-        }
-
-        span {
-            font-size: 30px;
-            color: #333333;
-            font-family: SourceHanSansSC-Bold;
-            font-weight: bold;
-            position: absolute;
-            top: 25px;
-            left: 50%;
-            margin-left: -80px;
-        }
-    }
-    
-    .event-silder {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        .silder-axis {
-            position: absolute;
-            background: #fff;
-        }
-        .event-box {
-            margin-left: 8px;
-            border-left: 1px solid #00a0e9;
-            margin-bottom: 70px;
-            width: 100%;
-            .event-box-list {
-                p {
+                span {
                     font-size: 16px;
+                    color: #171719;
                     font-family: SourceHanSansSC-Regular;
-                    margin-bottom: 12px;
                 }
             }
         }
-        .ol-li-active {
-            color: #ffffff;
-            background: rgba(0, 160, 233, 1);
+
+        .brief-content {
+            font-size: 16px;
+            color: #666666;
+            font-family: SourceHanSansSC-Regular;
+            text-align: left;
+            line-height: 30px;
+            text-indent: 35px;
         }
-        .event-box-list {
-            padding-left: 25px;
+    }
+
+    .brief dl dd h3,
+    .brief dl dd .brief-titlet-number {
+        font-size: 48px;
+        font-family: SourceHanSansSC-Medium;
+        display: inline-block;
+    }
+
+    /* 认识文储 */
+    .know {
+        background: #f5f5f8;
+
+        .know-titlet {
+            text-align: center;
             position: relative;
-        
-            h5 {
-                font-size: 24px;
+            margin: auto;
+            margin-top: 37px;
+            margin-bottom: 24px;
+
+            h2 {
+                font-size: 85px;
                 color: #666666;
                 font-family: DINCond-Black;
-                margin-bottom: 21px;
-        
-                i {
-                    width: 13px;
-                    height: 13px;
-                    border: 1px solid rgba(0, 160, 233, 1);
-                    display: inline-block;
-                    border-radius: 50%;
-                    background: #ffffff;
-                    position: absolute;
-                    left: -8px;
-                    top: 10px;
-                }
+                opacity: 0.14;
             }
-            p {
-                i {
-                    width: 8px;
-                    height: 8px;
-                    background: rgba(0, 160, 233, 1);
-                    border-radius: 50%;
-                    margin-right: 20px;
-                    display: inline-block;
-                }
-        
-                span {
-                    width: 35px;
-                    margin-right: 20px;
-                }
-            }
-            .list-top {
-                h5 {
-                    margin: 23px auto;
-                }
+
+            span {
+                font-size: 30px;
+                color: #333333;
+                font-family: SourceHanSansSC-Bold;
+                font-weight: bold;
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                margin-left: -65px;
             }
         }
-        
-    }
-    ol {
-        top: 16.5%;
-        right: 19.5%;
-        cursor: pointer;
-        li {
-            width: 60px;
-            height: 30px;
-            font-size: 18px;
+
+        .know-content {
+            font-size: 16px;
             color: #666666;
-            text-align: center;
+            font-family: SourceHanSansSC-Regular;
+            text-align: left;
             line-height: 30px;
-            font-family: DINCond-Black;
-            margin-bottom: 15px;
+            text-indent: 35px;
+            margin-bottom: 20px;
+        }
+
+        .know-list {
+            height: 859px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+
+            .know-list-box {
+                width: 100%;
+                position: relative;
+                top: -100px;
+
+                li {
+                    height: 230px;
+                    position: relative;
+                }
+            }
+
+            .li-hide {
+                width: 100%;
+                font-size: 24px;
+                color: #ffffff;
+                text-align: center;
+                font-family: SourceHanSansSC-Bold;
+                font-weight: bold;
+                line-height: 230px;
+                position: absolute;
+                top: 0;
+                z-index: 22;
+            }
+        }
+
+        .li-oshow {
+            position: absolute;
+            top: 17px;
+            width: 100%;
+            height: 0px;
+            line-height: 23px;
+            background: url('../image/know-bj.png') no-repeat center;
+            background-size: 100% 100%;
+            transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            overflow: hidden;
+
+        }
+
+        .oshow-pic {
+            width: 100%;
+            height: 240px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            z-index: 20;
+
+            img {
+                width: 100%;
+            }
+
+            .hide-pic {
+                position: relative;
+                left: -1px;
+                width: 100%;
+            }
+        }
+
+        .oshow-conter {
+            color: #ffffff;
+            padding: 0 17px;
+
+            h4 {
+                font-size: 24px;
+                text-align: center;
+                font-family: SourceHanSansSC-Bold;
+                font-weight: bold;
+                margin-top: 45px;
+                margin-bottom: 23px;
+            }
+
+            span {
+                font-size: 14px;
+                font-family: SourceHanSansSC-Regular;
+                text-indent: 31px;
+                display: inline-block;
+            }
+        }
+
+        .img-show {
+            display: none;
+        }
+
+        // 手机端
+        .know-mobile {
+            position: relative;
+            img {
+                width: 100%;
+                position: relative;
+                z-index: 9;
+            }
+
+            h3 {
+                position: relative;
+                top: -110px;
+                color: #fff;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                left: 0;
+                right: 0;
+                font-size: 18px;
+                z-index: 10;
+            }
+
+            span {
+                background: url(../image/know-bj.png) no-repeat center;
+                display: block;
+                font-size: 14px;
+                color: #fff;
+                text-indent: 31px;
+                background-size: 100% 100%;
+                padding: 50px 15px;
+                position: relative;
+                top: -45px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    /* 事件 */
+    .event {
+        background: #ffffff;
+        padding-top: 104px;
+        position: relative;
+
+        .event-titlet {
+            position: relative;
+
+            h2 {
+                font-size: 85px;
+                color: #333333;
+                text-align: center;
+                font-family: DINCond-Black;
+                opacity: 0.14;
+            }
+
+            span {
+                font-size: 30px;
+                color: #333333;
+                font-family: SourceHanSansSC-Bold;
+                font-weight: bold;
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                margin-left: -80px;
+            }
+        }
+        .event-silder {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;      
+            position: relative;
+            .silder-axis {
+                position: absolute;
+                background: #fff;
+            }
+            .event-box {
+                margin-left: 8px;
+                border-left: 1px solid #00a0e9;
+                margin-bottom: 70px;
+                width: 100%;
+
+                .event-box-list {
+                    p {
+                        font-size: 16px;
+                        font-family: SourceHanSansSC-Regular;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .ol-li-active {
+                color: #ffffff;
+                background: rgba(0, 160, 233, 1);
+            }
+
+            .event-box-list {
+                padding-left: 25px;
+                position: relative;
+
+                h5 {
+                    font-size: 24px;
+                    color: #666666;
+                    font-family: DINCond-Black;
+                    margin-bottom: 21px;
+
+                    i {
+                        width: 13px;
+                        height: 13px;
+                        border: 1px solid rgba(0, 160, 233, 1);
+                        display: inline-block;
+                        border-radius: 50%;
+                        background: #ffffff;
+                        position: absolute;
+                        left: -8px;
+                        top: 10px;
+                    }
+                }
+
+                p {
+                    i {
+                        width: 8px;
+                        height: 8px;
+                        background: rgba(0, 160, 233, 1);
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        display: inline-block;
+                    }
+
+                    span {
+                        width: 35px;
+                        margin-right: 20px;
+                    }
+                }
+
+                .list-top {
+                    h5 {
+                        margin: 23px auto;
+                    }
+                }
+            }
+
+        }
+
+        ol {
+            top: 0;
+            right: 0;
+            cursor: pointer;
+
+            li {
+                width: 60px;
+                height: 30px;
+                font-size: 18px;
+                color: #666666;
+                text-align: center;
+                line-height: 30px;
+                font-family: DINCond-Black;
+                margin-bottom: 15px;
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
+// 手机端
+@media screen and (min-width:320px) and (max-width:678px) { 
+}
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
     }
-  }
+}

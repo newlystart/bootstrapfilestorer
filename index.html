@@ -7,16 +7,15 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="applicable-device" content="pc,mobile">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="./image/favicon.ico">
     <title>文储网络</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/distribute.css">
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
-
 <body>
     <div class="home">
         <div class="header navbar navbar-default navbar-fixed-top">
@@ -616,14 +615,12 @@
             placeholder: "./image/programme-loading.png",
         });
         $("img.programme-loading").removeClass("programme-loading");
-
-
         $("img.list-pic").lazyload({
             threshold: 200,
             effect: "fadeIn",
             placeholder: "./image/product-loading.png",
         });
-
+        // 手机端头部按钮
         $('.navbar-header .navbar-toggle').click(function () {
             if ($('.navbar-collapse').hasClass('in')) {
                 $('.navbar-toggle').css({

@@ -124,13 +124,17 @@ html {
       -moz-transition: all 0.5s;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
+
       .icon-bar {
         background-color: #ffffff;
       }
     }
+
     .navbar-collapse {
       box-shadow: none;
+      border-color: transparent;
     }
+
     .navbar-header {
       &>a {
         display: flex;
@@ -209,6 +213,7 @@ html {
         display: inline-block;
         background: none;
         border-bottom: 2px solid transparent;
+
         &:hover {
           border-bottom: 2px solid #00A0E9;
         }
@@ -226,8 +231,6 @@ html {
     background: none;
   }
 }
-
-
 //轮播图
 .banner {
   .banner_a {
@@ -237,7 +240,8 @@ html {
     background-repeat: no-repeat;
     display: block;
     position: relative;
-    img{
+
+    img {
       width: 100%;
       height: 100% ! important;
     }
@@ -255,8 +259,9 @@ html {
     //   height: 100%;
     //   background-image: url("../image/banner0001.png");
     // }
-    
+
   }
+
   .image_b {
     background-image: url("../image/banner02.jpg");
   }
@@ -295,6 +300,7 @@ html {
     height: 5px;
     background: #fff;
   }
+
   // 轮播图内容
   .slide-banner {
     position: absolute;
@@ -303,6 +309,7 @@ html {
     right: 0;
     z-index: 999;
   }
+
   .index-swiper-textone {
     position: absolute;
     top: 30%;
@@ -313,17 +320,20 @@ html {
     font-family: SourceHanSansSC-Regular;
     text-align: left;
     font-weight: 500;
+
     h2 {
       font-size: 36px;
       color: #ffaf56;
       font-family: SourceHanSansSC-Regular;
       font-weight: 300;
     }
+
     h1 {
       font-size: 72px;
       font-family: MicrosoftYaHeiLight;
       font-weight: 300;
     }
+
     span {
       width: 136px;
       height: 45px;
@@ -337,6 +347,7 @@ html {
       margin: 20px auto;
     }
   }
+
   .index-swiper-texttwo {
     position: absolute;
     top: 35%;
@@ -344,6 +355,7 @@ html {
     right: 0;
     text-align: center;
     z-index: 6;
+
     h1 {
       font-size: 68px;
       font-family: JLinXin;
@@ -351,6 +363,7 @@ html {
       color: #fff;
       text-shadow: 11px 7px 20px rgba(12, 9, 18, 1);
     }
+
     h3 {
       font-size: 44px;
       font-family: SourceHanSansSC-Light;
@@ -358,6 +371,7 @@ html {
       color: #f0fc00;
     }
   }
+
   .index-swiper-three {
     position: absolute;
     bottom: 11%;
@@ -365,6 +379,7 @@ html {
     right: 0;
     z-index: 33;
     text-align: center;
+
     h1 {
       font-size: 60px;
       color: #000;
@@ -372,6 +387,7 @@ html {
       margin-bottom: 20px;
       font-weight: 500;
     }
+
     span {
       padding: 10px 20px;
       background: #000;
@@ -381,6 +397,7 @@ html {
       border-radius: 10px;
     }
   }
+
   .index-swiper-textfour {
     position: absolute;
     top: 35%;
@@ -388,6 +405,7 @@ html {
     font-size: 24px;
     color: #fff;
     font-family: SourceHanSansSC-Regular;
+
     h2 {
       font-size: 58px;
       font-family: SourceHanSansSC-Medium;
@@ -395,124 +413,124 @@ html {
       text-shadow: 0px 0px 6px rgba(12, 10, 17, 0.6);
       margin-bottom: 15px;
     }
+
     ul {
       display: flex;
       width: 1000px;
       margin-top: 80px;
       text-shadow: 0px 0px 6px rgba(12, 10, 17, 0.6);
+
       li {
         flex: 0 0 25%;
       }
     }
   }
+
   .index-swiper-textfour ul li:nth-of-type(2),
   .index-swiper-textfour ul li:nth-of-type(4) {
     text-shadow: 0px 0px 6px rgba(12, 10, 17, 0.6);
   }
-  
+
 
 }
-
-
 /* 底部 */
 .footer {
   background: #1f222b;
-}
 
-.footer-center {
-  margin: auto;
-  padding-top: 44px;
-  font-size: 14px;
-  color: #cccccc;
-  font-family: SourceHanSansSC-Regular;
+  .footer-center {
+    margin: auto;
+    padding-top: 44px;
+    font-size: 14px;
+    color: #cccccc;
+    font-family: SourceHanSansSC-Regular;
 
-  dl {
-    flex: 0.65;
+    dl {
+      flex: 0.65;
 
-    dd {
-      margin: 10px auto;
+      dd {
+        margin: 10px auto;
 
-      &:nth-of-type(3) {
-        margin-top: 7px;
+        &:nth-of-type(3) {
+          margin-top: 7px;
+        }
       }
+    }
+
+    .footer-center-right {
+      flex: 0.3;
     }
   }
 
-  .footer-center-right {
-    flex: 0.3;
+  .footer-center dl,
+  .footer-center ul {
+    display: inline-block;
+    line-height: 28px;
   }
-}
 
-.footer-center dl,
-.footer-center ul {
-  display: inline-block;
-  line-height: 28px;
-}
+  .footer-center dl dd,
+  .footer-center dl dd a {
+    color: #999999;
+  }
 
-.footer-center dl dd,
-.footer-center dl dd a {
-  color: #999999;
-}
+  .footer-center dl dd:nth-of-type(1),
+  .footer-center dl dd:nth-of-type(2) {
+    color: #cccccc;
+  }
 
-.footer-center dl dd:nth-of-type(1),
-.footer-center dl dd:nth-of-type(2) {
-  color: #cccccc;
-}
+  .footer-center-right {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      line-height: 38px;
+      margin-bottom: 15px;
 
-.footer-center-right {
-  ul {
-    display: flex;
-    justify-content: space-between;
-    line-height: 38px;
-    margin-bottom: 15px;
+      div {
+        a {
+          color: #999999;
+        }
+      }
+    }
 
-    div {
+    p {
+      margin-top: 6px;
+
       a {
         color: #999999;
       }
     }
-  }
 
-  p {
-    margin-top: 6px;
-
-    a {
-      color: #999999;
+    .friendship {
+      font-size: 14px;
     }
   }
 
-  .friendship {
+  .footer-center-right ul div,
+  .footer-center-right span,
+  .footer-center-right p {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .right-list-code {
+    display: none;
+    color: #999999;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .right-list-show {
+    display: flex;
+  }
+
+  .footer-copywriting {
+    padding-bottom: 30px;
+    margin-top: 40px;
     font-size: 14px;
+    font-family: SourceHanSansSC-Regular;
+    color: #999999;
+    text-align: center;
   }
 }
-
-.footer-center-right ul div,
-.footer-center-right span,
-.footer-center-right p {
-  font-size: 12px;
-  color: #999999;
-}
-
-.right-list-code {
-  display: none;
-  color: #999999;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.right-list-show {
-  display: flex;
-}
-
-.footer-copywriting {
-  padding-bottom: 30px;
-  margin-top: 40px;
-  font-size: 14px;
-  font-family: SourceHanSansSC-Regular;
-  color: #999999;
-  text-align: center;
-}
-
 /* 回到顶部 */
 .top_sec {
   position: fixed;
@@ -521,16 +539,15 @@ html {
   width: 42px;
   z-index: 999;
   display: none;
-}
-
-#goPageTop {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  background: url('../image/Top.png') no-repeat 0 0;
-  background-size: 42px auto;
-  display: block;
+  #goPageTop {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: url('../image/Top.png') no-repeat 0 0;
+    background-size: 42px auto;
+    display: block;
+  }
 }
 
 /* 滚动条 */
@@ -560,25 +577,30 @@ html {
   // 头部
   .header {
     background: rgba(44, 48, 60, 0.9);
+
     .navbar-default {
       #nav-right {
         .nav-right-ul {
           margin-left: 0px;
           display: inline-block;
           width: 100%;
+
           li {
             margin-left: 0px;
 
             &:last-child {
               text-align: left;
             }
+
             .station {
               text-align: left;
+
               a {
                 border-radius: 0px;
                 background: none;
                 color: #fff;
-                &:hover{
+
+                &:hover {
                   border-bottom: 2px solid transparent;
 
                 }
@@ -586,20 +608,24 @@ html {
             }
           }
         }
+
         a {
           display: block;
           padding: 15px;
           font-size: 16px;
         }
-        .select{
+
+        .select {
           border-bottom: 1px solid #ffffff;
         }
       }
-      .navbar-toggle{
+
+      .navbar-toggle {
         margin: 8px 15px;
       }
-      .navbar-header{
-        a{
+
+      .navbar-header {
+        a {
           width: 194px;
           height: 50px;
           margin: 0px auto;
@@ -609,6 +635,7 @@ html {
     }
 
   }
+
   // 轮播图
   .banner {
     .carousel-indicators li {
@@ -626,21 +653,27 @@ html {
       height: 5px;
       background: #fff;
     }
+
     .index-swiper-texttwo {
       top: 45%;
+
       h1 {
         font-size: 24px;
       }
+
       h3 {
         font-size: 20px;
       }
     }
+
     .index-swiper-three {
       position: absolute;
       bottom: 11%;
+
       h1 {
         font-size: 28px;
       }
+
       span {
         padding: 5px 10px;
         font-size: 18px;
@@ -648,7 +681,8 @@ html {
     }
 
   }
-  .top_sec{
+  // 返回顶部
+  .top_sec {
     bottom: 10px;
     right: 25px;
   }

@@ -1,18 +1,22 @@
-/* 了解文储 */
-.brief {
+.aboutus {
+  /* 了解文储 */
+  /* 认识文储 */
+  /* 事件 */
+}
+.aboutus .brief {
   text-align: center;
   position: relative;
   margin: auto;
   margin-top: 59px;
   margin-bottom: 30px;
 }
-.brief .brief-titlet h2 {
+.aboutus .brief .brief-titlet h2 {
   font-size: 85px;
   color: #666666;
   font-family: DINCond-Black;
   opacity: 0.14;
 }
-.brief .brief-titlet span {
+.aboutus .brief .brief-titlet span {
   font-size: 30px;
   color: #333333;
   font-family: SourceHanSansSC-Bold;
@@ -22,7 +26,7 @@
   left: 50%;
   margin-left: -65px;
 }
-.brief dl dd {
+.aboutus .brief dl dd {
   padding: 0;
   height: 166px;
   border-right: 1px solid #d3d0d0;
@@ -31,15 +35,15 @@
   justify-content: center;
   line-height: 55px;
 }
-.brief dl dd:last-child {
+.aboutus .brief dl dd:last-child {
   border-right: none;
 }
-.brief dl dd span {
+.aboutus .brief dl dd span {
   font-size: 16px;
   color: #171719;
   font-family: SourceHanSansSC-Regular;
 }
-.brief .brief-content {
+.aboutus .brief .brief-content {
   font-size: 16px;
   color: #666666;
   font-family: SourceHanSansSC-Regular;
@@ -47,30 +51,29 @@
   line-height: 30px;
   text-indent: 35px;
 }
-.brief dl dd h3,
-.brief dl dd .brief-titlet-number {
+.aboutus .brief dl dd h3,
+.aboutus .brief dl dd .brief-titlet-number {
   font-size: 48px;
   font-family: SourceHanSansSC-Medium;
   display: inline-block;
 }
-/* 认识文储 */
-.know {
+.aboutus .know {
   background: #f5f5f8;
 }
-.know .know-titlet {
+.aboutus .know .know-titlet {
   text-align: center;
   position: relative;
   margin: auto;
   margin-top: 37px;
   margin-bottom: 24px;
 }
-.know .know-titlet h2 {
+.aboutus .know .know-titlet h2 {
   font-size: 85px;
   color: #666666;
   font-family: DINCond-Black;
   opacity: 0.14;
 }
-.know .know-titlet span {
+.aboutus .know .know-titlet span {
   font-size: 30px;
   color: #333333;
   font-family: SourceHanSansSC-Bold;
@@ -80,7 +83,7 @@
   left: 50%;
   margin-left: -65px;
 }
-.know .know-content {
+.aboutus .know .know-content {
   font-size: 16px;
   color: #666666;
   font-family: SourceHanSansSC-Regular;
@@ -89,23 +92,23 @@
   text-indent: 35px;
   margin-bottom: 20px;
 }
-.know .know-list {
+.aboutus .know .know-list {
   height: 859px;
   display: flex;
   align-items: center;
   overflow: hidden;
   position: relative;
 }
-.know .know-list .know-list-box {
+.aboutus .know .know-list .know-list-box {
   width: 100%;
   position: relative;
   top: -100px;
 }
-.know .know-list .know-list-box li {
+.aboutus .know .know-list .know-list-box li {
   height: 230px;
   position: relative;
 }
-.know .know-list .li-hide {
+.aboutus .know .know-list .li-hide {
   width: 100%;
   font-size: 24px;
   color: #ffffff;
@@ -117,7 +120,7 @@
   top: 0;
   z-index: 22;
 }
-.know .li-oshow {
+.aboutus .know .li-oshow {
   position: absolute;
   top: 17px;
   width: 100%;
@@ -131,7 +134,7 @@
   -o-transition: all 0.4s;
   overflow: hidden;
 }
-.know .oshow-pic {
+.aboutus .know .oshow-pic {
   width: 100%;
   height: 240px;
   display: inline-block;
@@ -143,25 +146,46 @@
   -o-transition: all 0.5s;
   z-index: 20;
 }
-.know .oshow-pic img {
+.aboutus .know .oshow-pic img {
   width: 100%;
 }
-.know .oshow-pic .hide-pic {
+.aboutus .know .oshow-pic .hide-pic {
   position: relative;
   left: -1px;
   width: 100%;
 }
-.know .know-mobile {
+.aboutus .know .oshow-conter {
+  color: #ffffff;
+  padding: 0 17px;
+}
+.aboutus .know .oshow-conter h4 {
+  font-size: 24px;
+  text-align: center;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 23px;
+}
+.aboutus .know .oshow-conter span {
+  font-size: 14px;
+  font-family: SourceHanSansSC-Regular;
+  text-indent: 31px;
+  display: inline-block;
+}
+.aboutus .know .img-show {
+  display: none;
+}
+.aboutus .know .know-mobile {
   position: relative;
 }
-.know .know-mobile img {
+.aboutus .know .know-mobile img {
   width: 100%;
   position: relative;
   z-index: 9;
 }
-.know .know-mobile h3 {
-  position: absolute;
-  top: 20%;
+.aboutus .know .know-mobile h3 {
+  position: relative;
+  top: -110px;
   color: #fff;
   text-align: center;
   margin-right: auto;
@@ -171,7 +195,7 @@
   font-size: 18px;
   z-index: 10;
 }
-.know .know-mobile span {
+.aboutus .know .know-mobile span {
   background: url(../image/know-bj.png) no-repeat center;
   display: block;
   font-size: 14px;
@@ -180,47 +204,25 @@
   background-size: 100% 100%;
   padding: 50px 15px;
   position: relative;
-  top: -25px;
+  top: -45px;
   line-height: 27px;
 }
-.oshow-conter {
-  color: #ffffff;
-  padding: 0 17px;
-}
-.oshow-conter h4 {
-  font-size: 24px;
-  text-align: center;
-  font-family: SourceHanSansSC-Bold;
-  font-weight: bold;
-  margin-top: 45px;
-  margin-bottom: 23px;
-}
-.oshow-conter span {
-  font-size: 14px;
-  font-family: SourceHanSansSC-Regular;
-  text-indent: 31px;
-  display: inline-block;
-}
-.img-show {
-  display: none;
-}
-/* 事件 */
-.event {
+.aboutus .event {
   background: #ffffff;
   padding-top: 104px;
   position: relative;
 }
-.event .event-titlet {
+.aboutus .event .event-titlet {
   position: relative;
 }
-.event .event-titlet h2 {
+.aboutus .event .event-titlet h2 {
   font-size: 85px;
   color: #333333;
   text-align: center;
   font-family: DINCond-Black;
   opacity: 0.14;
 }
-.event .event-titlet span {
+.aboutus .event .event-titlet span {
   font-size: 30px;
   color: #333333;
   font-family: SourceHanSansSC-Bold;
@@ -230,41 +232,42 @@
   left: 50%;
   margin-left: -80px;
 }
-.event .event-silder {
+.aboutus .event .event-silder {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
-.event .event-silder .silder-axis {
+.aboutus .event .event-silder .silder-axis {
   position: absolute;
   background: #fff;
 }
-.event .event-silder .event-box {
+.aboutus .event .event-silder .event-box {
   margin-left: 8px;
   border-left: 1px solid #00a0e9;
   margin-bottom: 70px;
   width: 100%;
 }
-.event .event-silder .event-box .event-box-list p {
+.aboutus .event .event-silder .event-box .event-box-list p {
   font-size: 16px;
   font-family: SourceHanSansSC-Regular;
   margin-bottom: 12px;
 }
-.event .event-silder .ol-li-active {
+.aboutus .event .event-silder .ol-li-active {
   color: #ffffff;
   background: #00a0e9;
 }
-.event .event-silder .event-box-list {
+.aboutus .event .event-silder .event-box-list {
   padding-left: 25px;
   position: relative;
 }
-.event .event-silder .event-box-list h5 {
+.aboutus .event .event-silder .event-box-list h5 {
   font-size: 24px;
   color: #666666;
   font-family: DINCond-Black;
   margin-bottom: 21px;
 }
-.event .event-silder .event-box-list h5 i {
+.aboutus .event .event-silder .event-box-list h5 i {
   width: 13px;
   height: 13px;
   border: 1px solid #00a0e9;
@@ -275,7 +278,7 @@
   left: -8px;
   top: 10px;
 }
-.event .event-silder .event-box-list p i {
+.aboutus .event .event-silder .event-box-list p i {
   width: 8px;
   height: 8px;
   background: #00a0e9;
@@ -283,19 +286,19 @@
   margin-right: 20px;
   display: inline-block;
 }
-.event .event-silder .event-box-list p span {
+.aboutus .event .event-silder .event-box-list p span {
   width: 35px;
   margin-right: 20px;
 }
-.event .event-silder .event-box-list .list-top h5 {
+.aboutus .event .event-silder .event-box-list .list-top h5 {
   margin: 23px auto;
 }
-.event ol {
-  top: 16.5%;
-  right: 19.5%;
+.aboutus .event ol {
+  top: 0;
+  right: 0;
   cursor: pointer;
 }
-.event ol li {
+.aboutus .event ol li {
   width: 60px;
   height: 30px;
   font-size: 18px;
