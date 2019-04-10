@@ -278,6 +278,9 @@
   left: -8px;
   top: 10px;
 }
+.aboutus .event .event-silder .event-box-list p {
+  display: flex;
+}
 .aboutus .event .event-silder .event-box-list p i {
   width: 8px;
   height: 8px;
@@ -285,10 +288,14 @@
   border-radius: 50%;
   margin-right: 20px;
   display: inline-block;
+  position: relative;
+  top: 7px;
 }
 .aboutus .event .event-silder .event-box-list p span {
-  width: 35px;
-  margin-right: 20px;
+  width: 60px;
+}
+.aboutus .event .event-silder .event-box-list p em {
+  width: 90%;
 }
 .aboutus .event .event-silder .event-box-list .list-top h5 {
   margin: 23px auto;
@@ -307,6 +314,11 @@
   line-height: 30px;
   font-family: DINCond-Black;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 678px) {
+  .aboutus .event {
+    padding-top: 35px;
+  }
 }
 @media (min-width: 1200px) {
   .container {

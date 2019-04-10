@@ -324,7 +324,7 @@
   width: 58px;
   height: 54px;
 }
-.home .Immobility-move:hover {
+.home .tool ul li .Immobility-move:hover {
   -webkit-animation: keyframes 2s linear infinite;
   -moz-animation: keyframes 2s linear infinite;
   animation: zindex 2s linear infinite;
