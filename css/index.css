@@ -1,23 +1,23 @@
-.home {
+.wrapper {
   /* 解决方案 */
   /* 分布 */
 }
-.home .home-nav {
+.wrapper .wrapper-nav {
   background: #f7f8fb;
 }
-.home .home-nav ul li {
+.wrapper .wrapper-nav ul li {
   height: 166px;
   border-left: 1px solid #D3D0D0;
   position: relative;
   overflow: hidden;
 }
-.home .home-nav ul li:first-child {
+.wrapper .wrapper-nav ul li:first-child {
   border-left: none;
 }
-.home .home-nav ul li:hover {
+.wrapper .wrapper-nav ul li:hover {
   box-shadow: 0px 3px 8px 1px rgba(4, 0, 0, 0.2);
 }
-.home .home-nav ul li h2 {
+.wrapper .wrapper-nav ul li h2 {
   font-size: 18px;
   font-family: 'SourceHanSansSC-Medium';
   margin-bottom: 14px;
@@ -28,14 +28,14 @@
   position: absolute;
   top: 39px;
 }
-.home .home-nav ul li h2 i {
+.wrapper .wrapper-nav ul li h2 i {
   width: 30px;
   height: 2px;
   background: #00a0e9;
   display: block;
   margin-top: 14px;
 }
-.home .home-nav ul li div {
+.wrapper .wrapper-nav ul li div {
   margin-top: 14px;
   font-size: 16px;
   font-family: 'SourceHanSansSC-Regular';
@@ -46,52 +46,54 @@
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-.home .home-nav ul li div P {
+.wrapper .wrapper-nav ul li div P {
   margin-bottom: 5px;
 }
-.home .home-nav ul li:hover h2 {
+.wrapper .wrapper-nav ul li:hover h2 {
   top: 19px;
 }
-.home .home-nav ul li:hover div {
+.wrapper .wrapper-nav ul li:hover div {
   bottom: 40px;
 }
-.home .home-logo {
+.wrapper .wrapper-logo {
   text-align: center;
   padding-bottom: 60px;
   background: #fff;
 }
-.home .home-logo .logo-img {
+.wrapper .wrapper-logo .logo-img {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-.home .home-logo .logo-img img {
+.wrapper .wrapper-logo .logo-img img {
+  width: 158px;
   height: 44px;
 }
-.home .home-logo .logo-img i {
+.wrapper .wrapper-logo .logo-img i {
   display: block;
   margin: 0 20px;
   border-left: 2px solid #999999;
 }
-.home .home-logo h3 {
+.wrapper .wrapper-logo h3 {
   font-size: 24px;
   color: #333333;
   font-family: 'SourceHanSansSC-Regular';
   margin-top: 29px;
   margin-bottom: 26px;
 }
-.home .home-logo span {
+.wrapper .wrapper-logo span {
   font-size: 16px;
   font-family: 'SourceHanSansSC-Regular';
+  color: #666666;
 }
-.home .home-logo span:hover {
+.wrapper .wrapper-logo span:hover {
   color: #00A0E9;
 }
-.home .home-product {
+.wrapper .wrapper-product {
   background: #f5f5f8;
   padding: 40px 0px;
 }
-.home .home-product h3 {
+.wrapper .wrapper-product h3 {
   height: 100px;
   margin: 0;
   line-height: 100px;
@@ -102,25 +104,26 @@
   padding: 0 41px;
   background: linear-gradient(90deg, #00a0e9, #13b5ff);
 }
-.home .home-product h3 i {
+.wrapper .wrapper-product h3 i {
   width: 100%;
   height: 1px;
   background: #fff;
   display: inline-flex;
   position: relative;
   top: -80px;
+  opacity: 0.25;
 }
-.home .home-product ul li {
+.wrapper .wrapper-product ul li {
   border: 1px solid #eeeeee;
   position: relative;
   background: #ffffff;
 }
-.home .home-product ul li:hover {
+.wrapper .wrapper-product ul li:hover {
   cursor: pointer;
   box-shadow: 0px 3px 8px 1px rgba(4, 0, 0, 0.2);
   z-index: 2;
 }
-.home .home-product ul li h5 {
+.wrapper .wrapper-product ul li h5 {
   font-size: 18px;
   color: #333333;
   text-align: center;
@@ -128,39 +131,39 @@
   margin-top: 20px;
   margin-bottom: 19px;
 }
-.home .home-product ul li .ul-li-text {
+.wrapper .wrapper-product ul li .ul-li-text {
   height: 50px;
   font-size: 14px;
   color: #666666;
   text-align: left;
   display: inherit;
 }
-.home .home-product ul li dl {
+.wrapper .wrapper-product ul li dl {
   margin-bottom: 19px;
   border-bottom: 1px solid #bcbaba;
   margin-top: 14px;
   display: inline-block;
   height: 165px;
-  width: 100%;
+  padding: 0;
 }
-.home .home-product ul li dl dd {
+.wrapper .wrapper-product ul li dl dd {
   font-size: 12px;
   font-family: 'SourceHanSansSC-Regular';
   color: #666666;
   margin-bottom: 18px;
 }
-.home .home-product ul li dl dd span {
+.wrapper .wrapper-product ul li dl dd span {
   width: 131px;
   display: inline-block;
 }
-.home .home-product ul li dl dd img {
+.wrapper .wrapper-product ul li dl dd img {
   margin-right: 5px;
 }
-.home .home-product ul li dl dd em {
+.wrapper .wrapper-product ul li dl dd em {
   font-family: SourceHanSansSC-Regular;
   font-weight: bold;
 }
-.home .home-product ul li .list-retail {
+.wrapper .wrapper-product ul li .list-retail {
   margin-top: 14px;
   font-size: 12px;
   color: #666666;
@@ -168,21 +171,21 @@
   font-family: 'SourceHanSansSC-Regular';
   text-decoration: line-through;
 }
-.home .home-product ul li .product-ul-li-dt {
-  margin-bottom: 77px;
+.wrapper .wrapper-product ul li .product-ul-li-dt {
+  margin-bottom: 84px;
 }
-.home .home-product ul li .list-price {
+.wrapper .wrapper-product ul li .list-price {
   font-size: 14px;
   color: #00A0E9;
   font-family: 'SourceHanSansSC-Regular';
   text-align: center;
 }
-.home .home-product ul li .list-price span {
+.wrapper .wrapper-product ul li .list-price span {
   font-size: 20px;
   font-family: 'SourceHanSansSC-Bold';
   font-weight: bold;
 }
-.home .home-product ul li button {
+.wrapper .wrapper-product ul li button {
   width: 87px;
   height: 28px;
   border: none;
@@ -192,8 +195,9 @@
   margin: 20px auto;
   display: block;
   background: #00a0e9;
+  outline: none;
 }
-.home .home-product ul li .product-code {
+.wrapper .wrapper-product ul li .product-code {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -206,14 +210,14 @@
   align-items: center;
   display: none;
 }
-.home .home-product ul li .product-code img {
+.wrapper .wrapper-product ul li .product-code img {
   width: 166px;
   border-radius: 10px;
 }
-.home .programme {
+.wrapper .wrapper-programme {
   background: rgba(55, 61, 65, 0.53);
 }
-.home .programme h3 {
+.wrapper .wrapper-programme h3 {
   font-size: 24px;
   color: #010101;
   font-family: SourceHanSansSC-Bold;
@@ -223,17 +227,17 @@
   background: #fff;
   margin: 0px;
 }
-.home .programme ul {
+.wrapper .wrapper-programme ul {
   margin-bottom: 0px;
 }
-.home .programme ul li {
+.wrapper .wrapper-programme ul li {
   width: 20%;
   height: 400px;
   position: relative;
   float: left;
   overflow: hidden;
 }
-.home .programme ul li div {
+.wrapper .wrapper-programme ul li div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,43 +246,46 @@
   font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: #fff;
-  height: 400px;
+  height: 100%;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-.home .programme ul li p {
+.wrapper .wrapper-programme ul li .center-middle {
+  height: auto;
+}
+.wrapper .wrapper-programme ul li p {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-.home .programme ul li i {
+.wrapper .wrapper-programme ul li i {
   width: 32px;
   height: 4px;
   background: #fff;
 }
-.home .programme ul li:nth-of-type(1) {
+.wrapper .wrapper-programme ul li:nth-of-type(1) {
   background: url('../image/programme-bj01.png') no-repeat center;
 }
-.home .programme ul li:nth-of-type(2) {
+.wrapper .wrapper-programme ul li:nth-of-type(2) {
   background: url('../image/programme-bj02.png') no-repeat center;
 }
-.home .programme ul li:nth-of-type(3) {
+.wrapper .wrapper-programme ul li:nth-of-type(3) {
   background: url('../image/programme-bj03.png') no-repeat center;
 }
-.home .programme ul li:nth-of-type(4) {
+.wrapper .wrapper-programme ul li:nth-of-type(4) {
   background: url('../image/programme-bj04.png') no-repeat center;
 }
-.home .programme ul li:nth-of-type(5) {
+.wrapper .wrapper-programme ul li:nth-of-type(5) {
   background: url('../image/programme-bj05.png') no-repeat center;
 }
-.home .programme ul li:hover .list-hide {
+.wrapper .wrapper-programme ul li:hover .list-hide {
   display: none;
 }
-.home .programme ul li:hover .list-oShow {
+.wrapper .wrapper-programme ul li:hover .list-oShow {
   bottom: 0px;
 }
-.home .programme ul li .list-oShow {
+.wrapper .wrapper-programme ul li .list-oShow {
   position: absolute;
   left: 0;
   bottom: -400px;
@@ -286,7 +293,7 @@
   height: 400px;
   background: rgba(0, 160, 233, 0.6);
 }
-.home .programme ul li .list-oShow button {
+.wrapper .wrapper-programme ul li .list-oShow button {
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -297,34 +304,34 @@
   background: rgba(0, 160, 233, 0.6);
   cursor: pointer;
 }
-.home .programme ul li .list-oShow button:hover {
+.wrapper .wrapper-programme ul li .list-oShow button:hover {
   color: #00a0e9;
   background: #fff;
 }
-.home .programme ul li .list-oShow i {
+.wrapper .wrapper-programme ul li .list-oShow i {
   margin-bottom: 53px;
 }
-.home .tool {
+.wrapper .wrapper-tool {
   background: #fff;
 }
-.home .tool ul li {
+.wrapper .wrapper-tool ul li {
   text-align: center;
   margin-bottom: 48px;
 }
-.home .tool ul li p {
+.wrapper .wrapper-tool ul li p {
   margin-top: 23px;
   font-size: 14px;
   color: #666666;
   font-family: SourceHanSansSC-Regular;
 }
-.home .tool ul li .move {
+.wrapper .wrapper-tool ul li .move {
   display: none;
 }
-.home .tool ul li img {
+.wrapper .wrapper-tool ul li img {
   width: 58px;
   height: 54px;
 }
-.home .tool ul li .Immobility-move:hover {
+.wrapper .wrapper-tool ul li .Immobility-move:hover {
   -webkit-animation: keyframes 2s linear infinite;
   -moz-animation: keyframes 2s linear infinite;
   animation: zindex 2s linear infinite;
@@ -361,39 +368,42 @@
     transform: rotate(360deg);
   }
 }
-.home .partner {
+.wrapper .wrapper-partner {
   background: #ffffff;
   color: #333333;
   font-family: SourceHanSansSC-Regular;
   text-align: center;
-  line-height: 50px;
   padding-top: 81px;
   padding-bottom: 60px;
 }
-.home .partner img {
+.wrapper .wrapper-partner .partner-row {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .wrapper-partner .partner-row img {
   height: 44px;
 }
-.home .partner .partner-logo {
+.wrapper .wrapper-partner .partner-logo {
   width: 158px;
   padding-right: 20px;
   border-right: 2px solid #999999;
 }
-.home .partner .partner-vianet {
+.wrapper .wrapper-partner .partner-vianet {
   width: 184px;
   margin-left: 20px;
 }
-.home .partner p {
+.wrapper .wrapper-partner p {
   font-size: 24px;
-  margin-top: 19px;
+  margin: 19px 0px 10px 0px;
 }
-.home .partner span {
+.wrapper .wrapper-partner span {
   font-size: 16px;
   color: #666666;
 }
-.home .partner span:hover {
+.wrapper .wrapper-partner span:hover {
   color: #00a0e9;
 }
-.home .distribution {
+.wrapper .wrapper-distribution {
   line-height: 50px;
   margin: 20px auto;
   font-size: 24px;
@@ -401,19 +411,19 @@
   text-align: center;
   font-family: SourceHanSansSC-Regular;
 }
-.home .distribution p {
+.wrapper .wrapper-distribution p {
   font-size: 16px;
   color: #666666;
 }
-.home .distribution p:hover {
+.wrapper .wrapper-distribution p:hover {
   color: #00a0e9;
 }
-.home .main-bar {
+.wrapper .wrapper-main {
   margin: 39px auto;
   margin-bottom: 69px;
   background: #fff;
 }
-.home .main-bar span {
+.wrapper .wrapper-main span {
   font-size: 14px;
   color: #666666;
   font-family: SourceHanSansSC-Regular;
@@ -422,11 +432,11 @@
   height: 50px;
   margin-bottom: 20px;
 }
-.home .main-bar span img {
+.wrapper .wrapper-main span img {
   margin-right: 8px;
 }
 @media (min-width: 1200px) {
-  .home-logo img {
+  .wrapper-logo img {
     width: 10.333333%;
   }
   .container {
@@ -434,53 +444,107 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 668px) {
-  body .home {
+  body .wrapper {
     /* 解决方案 */
   }
-  body .home .home-logo h3 {
-    font-size: 18px;
+  body .wrapper .wrapper-logo {
+    padding-bottom: 30px;
   }
-  body .home .home-logo span {
+  body .wrapper .wrapper-logo h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  body .wrapper .wrapper-logo span {
     font-size: 14px;
     font-family: 'SourceHanSansSC-Regular';
   }
-  body .home .home-nav ul li {
-    height: 215px;
+  body .wrapper .wrapper-nav ul li {
+    border: none;
+    background: #fff;
+    margin: 15px 3%;
+    width: 93%;
+    height: 130px;
   }
-  body .home .home-nav ul li div {
-    bottom: 40px;
+  body .wrapper .wrapper-nav ul li h2 {
+    top: 15px !important;
+  }
+  body .wrapper .wrapper-nav ul li div {
+    bottom: 15px !important;
     padding-right: 15px;
   }
-  body .home .home-product ul li {
-    height: 620px;
+  body .wrapper .wrapper-product h3 {
+    padding: 0 15px;
   }
-  body .home .home-product ul li dl {
-    height: 115px;
+  body .wrapper .wrapper-product ul li {
+    height: auto;
   }
-  body .home .home-product ul li dl dd {
+  body .wrapper .wrapper-product ul li .ul-li-text {
+    text-align: center;
+  }
+  body .wrapper .wrapper-product ul li .list-center {
+    display: flex;
+    align-items: center;
+  }
+  body .wrapper .wrapper-product ul li dl {
+    height: auto;
+    border-bottom: 1px solid transparent;
+    padding: 0 15px;
+  }
+  body .wrapper .wrapper-product ul li dl dd {
     margin-bottom: 0;
     line-height: 25px;
   }
-  body .home .home-product ul li dl dd span {
-    width: 50%;
+  body .wrapper .wrapper-product ul li dl dd span {
+    width: 100%;
   }
-  body .home .home-product ul li .list-mobile {
+  body .wrapper .wrapper-product ul li .product-ul-li-dt {
+    margin-bottom: 0px;
+  }
+  body .wrapper .wrapper-product ul li:nth-child(odd) {
+    background: #F7F8FB;
+  }
+  body .wrapper .wrapper-product ul li .list-mobile {
     margin-bottom: 47px;
   }
-  body .home .home-product h3 {
-    padding: 0 15px;
+  body .wrapper .wrapper-programme ul li {
+    width: 100%;
+    height: 150px;
+    background-image: none !important;
+    background-color: #1F283A !important;
+    border-bottom: 1px solid #fff;
   }
-  body .home .programme ul li {
-    width: 50%;
+  body .wrapper .wrapper-programme ul li .list-center {
+    display: flex !important;
+    justify-content: space-around;
+    flex-direction: row;
   }
-  body .home .distribution {
+  body .wrapper .wrapper-programme ul li .list-center P {
+    font-weight: 500;
+    margin-top: 0px;
+  }
+  body .wrapper .wrapper-programme ul li .list-center i {
+    height: 2px;
+  }
+  body .wrapper .wrapper-programme ul li .list-center .see {
+    font-size: 14px;
+    color: #fff;
+    font-family: SourceHanSansSC-Light;
+    padding: 4px 7px;
+    margin-top: 18px;
+    border: 1px solid #fff;
+  }
+  body .wrapper .wrapper-distribution {
     line-height: 30px;
-    font-size: 16px;
+    font-size: 18px;
   }
-  body .home .distribution p {
+  body .wrapper .wrapper-distribution p {
     font-size: 14px;
   }
-  body .home .partner p {
+  body .wrapper .wrapper-partner {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  body .wrapper .wrapper-partner p {
     font-size: 18px;
   }
 }
