@@ -202,42 +202,6 @@
         .img-show {
             display: none;
         }
-
-        // 手机端
-        .know-mobile {
-            position: relative;
-            img {
-                width: 100%;
-                position: relative;
-                z-index: 9;
-            }
-
-            h3 {
-                position: relative;
-                top: -110px;
-                color: #fff;
-                text-align: center;
-                margin-right: auto;
-                margin-left: auto;
-                left: 0;
-                right: 0;
-                font-size: 18px;
-                z-index: 10;
-            }
-
-            span {
-                background: url(../image/know-bj.png) no-repeat center;
-                display: block;
-                font-size: 14px;
-                color: #fff;
-                text-indent: 31px;
-                background-size: 100% 100%;
-                padding: 85px 15px;
-                position: relative;
-                top: -75px;
-                line-height: 27px;
-            }
-        }
     }
 
     /* 事件 */
@@ -253,7 +217,8 @@
                 font-size: 85px;
                 color: #333333;
                 text-align: center;
-                font-family: DINCond-Black;
+                font-family:MicrosoftYaHei-Bold;
+                font-weight:bold;
                 opacity: 0.14;
             }
 
@@ -268,15 +233,18 @@
                 margin-left: -80px;
             }
         }
+
         .event-silder {
             margin: auto;
             display: flex;
-            justify-content: space-between;      
+            justify-content: space-between;
             position: relative;
+
             .silder-axis {
                 position: absolute;
                 background: #fff;
             }
+
             .event-box {
                 margin-left: 8px;
                 border-left: 1px solid #00a0e9;
@@ -291,6 +259,7 @@
                     }
                 }
             }
+
             .ol-li-active {
                 color: #ffffff;
                 background: rgba(0, 160, 233, 1);
@@ -303,7 +272,8 @@
                 h5 {
                     font-size: 24px;
                     color: #666666;
-                    font-family: DINCond-Black;
+                    font-family:MicrosoftYaHei-Bold;
+                    font-weight:bold;
                     margin-bottom: 21px;
 
                     i {
@@ -321,6 +291,7 @@
 
                 p {
                     display: flex;
+
                     i {
                         width: 8px;
                         height: 8px;
@@ -335,7 +306,8 @@
                     span {
                         width: 60px;
                     }
-                    em{
+
+                    em {
                         width: 90%;
                     }
                 }
@@ -367,14 +339,140 @@
         }
     }
 }
+
 // 手机端
-@media screen and (min-width:320px) and (max-width:678px) { 
-    .aboutus{
-        .event{
-            padding-top: 35px;
+@media screen and (min-width:320px) and (max-width:678px) {
+    body{
+        .aboutus {
+
+            // 了解文储
+            .brief {
+                margin-top: 36px;
+    
+                .brief-titlet {
+                    h2 {
+                        font-size: 50px;
+                    }
+    
+                    span {
+                        font-size: 18px;
+                        top: 17px;
+                        left: 50%;
+                        margin-left: -40px;
+                    }
+                }
+    
+                dl {
+                    dd {
+                        line-height: 28px;
+                        height: 75px;
+                        margin-bottom: 20px;
+    
+                        h3,
+                        .brief-titlet-number {
+                            font-size: 24px;
+                        }
+    
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+    
+                .brief-content {
+                    font-size: 14px;
+                }
+            }
+    
+            .know {
+                .know-titlet {
+                    h2 {
+                        font-size: 50px;
+    
+                    }
+    
+                    span {
+                        font-size: 18px;
+                        top: 15px;
+                        left: 50%;
+                        margin-left: -40px;
+                    }
+                }
+    
+                .know-content {
+                    font-size: 14px;
+                }
+    
+                // 手机端
+                .know-mobile {
+                    ul {
+                        li {
+                            background: #333333;
+                            padding-top: 30px;
+                            img {
+                                width: 100%;
+                            }
+    
+                            h3 {
+                                color: #fff;
+                                text-align: center;
+                                font-size: 16px;
+                                margin-top: 34px;
+                                font-family:MicrosoftYaHei-Bold;
+                                font-weight:bold;
+                            }
+    
+                            span {
+                                display: block;
+                                font-size: 14px;
+                                color: #fff;
+                                text-indent: 31px;
+                                background-size: 100% 100%;
+                                padding: 15px 15px;
+                            }
+    
+                        }
+                    }
+    
+                }
+            }
+    
+            //事件
+            .event {
+                padding-top: 35px;
+                .event-titlet {
+                    h2 {
+                        font-size: 50px;
+                    }
+                    span {
+                        font-size: 18px;
+                        top: 15px;
+                        left: 50%;
+                        margin-left: -45px;
+                    }
+                }
+                .event-silder{
+                    .event-box-list{
+                        h5 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    .event-box{
+                        .event-box-list{
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
