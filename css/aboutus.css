@@ -369,6 +369,9 @@
   body .aboutus .event .event-silder .event-box .event-box-list p {
     font-size: 14px;
   }
+  body .aboutus .event .event-silder .list-top {
+    padding-top: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
