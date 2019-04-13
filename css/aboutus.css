@@ -54,7 +54,7 @@
 .aboutus .brief dl dd h3,
 .aboutus .brief dl dd .brief-titlet-number {
   font-size: 48px;
-  font-family: SourceHanSansSC-Medium;
+  font-family: "Microsoft YaHei";
   display: inline-block;
 }
 .aboutus .know {
@@ -263,6 +263,7 @@
 }
 .aboutus .event .event-silder .event-box-list p span {
   width: 60px;
+  font-family: "Microsoft YaHei";
 }
 .aboutus .event .event-silder .event-box-list p em {
   width: 90%;

@@ -371,6 +371,7 @@ body {
 }
 .footer .footer-center dl dd {
   margin: 10px auto;
+  font-family: "Microsoft YaHei";
 }
 .footer .footer-center dl dd:nth-of-type(3) {
   margin-top: 7px;
